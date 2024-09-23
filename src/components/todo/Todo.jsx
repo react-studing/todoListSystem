@@ -1,7 +1,7 @@
 import "./todo.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashCan, faPen, faCheck } from "@fortawesome/free-solid-svg-icons";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import EditPopup from "../edit-popup/EditPopup";
 import { ButtonEditStyle } from "../../contexts/ButtonEditStyle";
 import DeletePopup from "../delete-popup/DeletePopup";

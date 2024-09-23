@@ -2,12 +2,10 @@ import { useContext, useState } from "react";
 import "./deletePopup.css";
 import { ButtonDeleteStyle } from "../../contexts/ButtonDeleteStyle";
 import { TodoContents } from "../../contexts/TodoContents";
-import { IsGreen } from "../../contexts/IsGreen";
 import { EditContentTitle } from "../../contexts/EditContentTitle";
 import { TodoContentDescriptoinContext } from "../../contexts/TodoContentDescriptoinContext";
 export default function DeletePopup({ id }) {
   const buttonDeleteStyle = useContext(ButtonDeleteStyle);
-  const buttonOfTrueStyle = useContext(IsGreen);
   const [deletePopupShow, setDeletePopupShow] = useState(true);
   const todoContents = useContext(TodoContents);
   const todoContetnsList = [...todoContents.todoContent];

@@ -30,11 +30,19 @@ export default function TodosSystem() {
       todoContent.filter((element) => element.checked === true)
     );
   }, [todoContent]);
+
   useEffect(() => {
     setUnCompoletedTodoContent(
       todoContent.filter((element) => element.checked === false)
     );
   }, [todoContent]);
+  useEffect(() => {
+    const totalArray = [...compoletedTodoContent, ...UnCompoletedTodoContent];
+    const sortedArray = totalArray.sort((a, b) => a.id - b.id);
+    if (JSON.stringify(sortedArray) !== JSON.stringify(todoContent)) {
+      setTodoContent(sortedArray);
+    }
+  }, [compoletedTodoContent, UnCompoletedTodoContent]);
   return (
     <Id.Provider value={{ id, setId }}>
       <UnCompletedTodo.Provider value={{ unCompleteTodos, setUnCompleteTodos }}>
