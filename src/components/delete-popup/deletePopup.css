@@ -1,0 +1,45 @@
+.delete-popup-background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.305);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.delete-popup {
+  background-color: white;
+  width: 31%;
+  border-radius: 4px;
+}
+.delete-popup-warning {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.delete-popup-warning h1 {
+  margin-bottom: 10px;
+}
+.delete-popup-warning h2 {
+  margin-top: 10px;
+  color: #979797;
+}
+.delete-popup-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+.delete-popup-buttons button {
+  padding: 10px;
+  margin: 10px;
+  background-color: inherit;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #5c2431;
+  font-weight: bold;
+  font-size: 15px;
+}

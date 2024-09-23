@@ -1,0 +1,79 @@
+.edit-popup-background {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.305);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.edit-popup {
+  background-color: white;
+  border-radius: 4px;
+  width: 45%;
+  direction: rtl;
+}
+.edit-popup h1 {
+  padding: 10px;
+}
+.edit-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.edit-inputs input {
+  width: 90%;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: solid 3px #ababab;
+}
+.edit-inputs input:focus {
+  outline: none;
+  border-bottom: solid 3px #5c2431;
+}
+
+.edit-input-title-with-title {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.edit-input-title-with-title label {
+  width: 90%;
+  direction: ltr;
+}
+.edit-input-description-with-title {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.edit-input-description-with-title label {
+  width: 90%;
+  direction: ltr;
+}
+.edit-buttons {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.edit-buttons .cancel-button,
+.edit-button {
+  margin-right: 20px;
+  margin-bottom: 5px;
+  padding: 5px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  color: #5c2431;
+}
+.edit-buttons .cancel-button:hover {
+  background-color: #5c24310b;
+}
+.edit-buttons .edit-button:hover {
+  background-color: #5c24310b;
+}

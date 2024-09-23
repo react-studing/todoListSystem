@@ -1,0 +1,14 @@
+.create-button {
+  width: 27%;
+  background-color: #99163d;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.create-button:hover {
+  background-color: #66102a;
+}
+.create-button:active {
+  background-color: #aa4261;
+}

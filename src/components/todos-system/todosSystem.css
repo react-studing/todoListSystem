@@ -1,0 +1,17 @@
+.todos-system {
+  background-color: #ffffff;
+  width: 40%;
+  margin: 200px auto;
+  overflow: hidden;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+.create-todo-system {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
