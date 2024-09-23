@@ -107,7 +107,7 @@ export default function EditPopup({ id }) {
                 const todoContents = [...todoContentsContext.todoContent];
                 todoContents[id - 1] = {
                   ...todoContents[id - 1],
-                  id: id,
+                  id: id - 1,
                   todoTitle: editContentTitleContext.editContentTitle[id - 1],
                   todoDescription:
                     todoContentDescriptoinContext.todoContentDescription[
